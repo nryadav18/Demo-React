@@ -1,0 +1,35 @@
+.fifth{
+    height: 30svh;
+    width: 100svw;
+    background-color: #48C067;
+    text-align: center;
+    align-content: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 100px;
+    font-family: "Lato", sans-serif;
+}
+.fifth > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    line-height: 1.5rem;
+    height: 200px;
+    width: 200px;
+}
+
+@media only screen and (max-width: 900px){
+    .fifth{
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 675px){
+    .fifth{
+        column-gap: 80px;
+        height: fit-content;
+    }
+}
